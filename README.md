@@ -35,11 +35,10 @@ All your personal data, skills, projects, and photo configurations live in **one
 👉 **[`src/data/portfolioData.ts`](./src/data/portfolioData.ts)**
 
 Open this file to customize:
-- **Your Name**: Change `"Arun Kumar"` to your full name.
+- **Your Name**: Change `"Arun Kanojiya"` to your full name.
 - **Your Title & Tagline**: MERN Stack Developer, bio, and availability status.
 - **Your Location**: Currently set to `"Surat, Gujarat, India"`.
 - **Contact Info & Socials**: Email address, GitHub URL, LinkedIn URL.
-- **Projects**: Live Demo URLs and GitHub repository links for **Taskly**, **Ssphere**, and **Travel Diary**.
 - **Experience & Education**: Degrees, graduation year, and work history.
 
 ---
