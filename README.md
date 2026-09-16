@@ -6,15 +6,15 @@ Designed with a clean premium UI, purple/fuchsia accents, smooth animations, and
 
 ## ✨ Features
 
-* Responsive modern design
-* MERN Stack developer profile
-* Skills & technology showcase
-* Project showcase with GitHub and live demo links
-* Experience & education section
-* EmailJS contact form
-* Smooth animations
-* Interactive infinite photo slider
-* Mobile-friendly navigation
+- Responsive modern design
+- MERN Stack developer profile
+- Skills & technology showcase
+- Project showcase with GitHub and live demo links
+- Experience & education section
+- EmailJS contact form
+- Smooth animations
+- Interactive infinite photo slider
+- Mobile-friendly navigation
 
 ## 🛠️ Tech Stack
 
@@ -70,6 +70,6 @@ VITE_EMAILJS_PUBLIC_KEY=your_public_key
 
 MERN Stack Developer · Surat, Gujarat, India
 
-* GitHub: Add your GitHub URL
-* LinkedIn: Add your LinkedIn URL
-* Email: [arun18.dev@gmail.com](mailto:arun18.dev@gmail.com)
+- GitHub: Add your GitHub URL
+- LinkedIn: Add your LinkedIn URL
+- Email: [arun18.dev@gmail.com](mailto:arun18.dev@gmail.com)
