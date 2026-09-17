@@ -34,8 +34,12 @@ export const Projects: React.FC = () => {
                         className="h-full w-full object-cover object-center transition duration-300 group-hover:scale-[1.02]"
                         onError={(e) => {
                           const target = e.currentTarget
-                          target.onerror = null
-                          target.src = '/images/avatar.png'
+                          if (target.dataset.fallbackTried) {
+                            target.onerror = null
+                            return
+                          }
+                          target.dataset.fallbackTried = 'true'
+                          target.src = portfolioData.personal.avatarFallback
                         }}
                       />
                     </div>

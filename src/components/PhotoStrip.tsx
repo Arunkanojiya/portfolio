@@ -123,8 +123,12 @@ export const PhotoStrip: React.FC = () => {
                   className="absolute inset-0 h-full w-full object-cover pointer-events-none"
                   onError={(e) => {
                     const target = e.currentTarget
-                    target.onerror = null
-                    target.src = '/images/avatar.png'
+                    if (target.dataset.fallbackTried) {
+                      target.onerror = null
+                      return
+                    }
+                    target.dataset.fallbackTried = 'true'
+                    target.src = portfolioData.personal.avatarFallback
                   }}
                 />
               </div>

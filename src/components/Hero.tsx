@@ -66,8 +66,12 @@ export const Hero: React.FC = () => {
                 className="h-full w-full object-cover object-[center_18%] scale-135 origin-[center_25%]"
                 onError={(e) => {
                   const target = e.currentTarget
-                  target.onerror = null
-                  target.src = '/images/avatar.jpg'
+                  if (target.dataset.fallbackTried) {
+                    target.onerror = null
+                    return
+                  }
+                  target.dataset.fallbackTried = 'true'
+                  target.src = portfolioData.personal.avatarFallback
                 }}
               />
             </a>

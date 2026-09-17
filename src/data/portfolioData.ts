@@ -4,6 +4,8 @@
  * projects, and image paths.
  */
 
+import { getAssetUrl } from "../lib/utils";
+
 export interface ProjectItem {
   id: string;
   title: string;
@@ -57,8 +59,9 @@ export const portfolioData = {
     availableForHire: true,
     statusText: "Available for full-time & high-impact projects",
     // 🖼️ PROFILE PHOTO: Put your image in public/images/avatar.jpg or replace this path
-    avatarImage: "/images/avatar.jpg",
-    resumeUrl: "/resume.pdf", // Link to your resume PDF (e.g., "/resume.pdf")
+    avatarImage: getAssetUrl("/images/avatar.jpg"),
+    avatarFallback: getAssetUrl("/images/avatar.svg"),
+    resumeUrl: getAssetUrl("/resume.pdf"), // Link to your resume PDF (e.g., "/resume.pdf")
   },
 
   // ─── EMAILJS / CONTACT FORM CONFIG ──────────────────────────────────────────
@@ -181,7 +184,7 @@ export const portfolioData = {
       demoUrl: "https://example.com/taskly-demo",
       githubUrl: "https://github.com/Arunkanojiya/TASKLY",
       // 🖼️ PROJECT IMAGE PLACEHOLDER: Replace with your screenshot in public/images/projects/
-      image: "/images/projects/taskly.svg",
+      image: getAssetUrl("/images/projects/taskly.svg"),
     },
     {
       id: "ssphere",
@@ -207,7 +210,7 @@ export const portfolioData = {
       demoUrl: "https://example.com/ssphere-demo",
       githubUrl: "https://github.com/Arunkanojiya/Ssphere",
       // 🖼️ PROJECT IMAGE PLACEHOLDER: Replace with your screenshot in public/images/projects/
-      image: "/images/projects/ssphere.svg",
+      image: getAssetUrl("/images/projects/ssphere.svg"),
     },
     {
       id: "travel-diary",
@@ -233,7 +236,7 @@ export const portfolioData = {
       demoUrl: "https://example.com/travel-diary-demo",
       githubUrl: "https://github.com/Arunkanojiya/TravelDiary",
       // 🖼️ PROJECT IMAGE PLACEHOLDER: Replace with your screenshot in public/images/projects/
-      image: "/images/projects/travel-diary.svg",
+      image: getAssetUrl("/images/projects/travel-diary.svg"),
     },
   ] as ProjectItem[],
 
@@ -291,22 +294,22 @@ export const portfolioData = {
   // 🖼️ These 9 images power the infinite auto-sliding strip.
   // You can replace these images in public/images/photos/ or change these paths!
   photoShowcase: [
-    { src: "/images/photos/photo-1.jpg", alt: "Developer workspace setup" },
-    { src: "/images/photos/photo-2.jpg", alt: "Coding on multi-monitor setup" },
-    { src: "/images/photos/photo-3.jpg", alt: "Modern tech setup" },
-    { src: "/images/photos/photo-4.jpg", alt: "Keyboard and clean desk" },
-    { src: "/images/photos/photo-5.jpg", alt: "Code review & planning" },
+    { src: getAssetUrl("/images/photos/photo-1.jpg"), alt: "Developer workspace setup" },
+    { src: getAssetUrl("/images/photos/photo-2.jpg"), alt: "Coding on multi-monitor setup" },
+    { src: getAssetUrl("/images/photos/photo-3.jpg"), alt: "Modern tech setup" },
+    { src: getAssetUrl("/images/photos/photo-4.jpg"), alt: "Keyboard and clean desk" },
+    { src: getAssetUrl("/images/photos/photo-5.jpg"), alt: "Code review & planning" },
     {
-      src: "/images/photos/photo-6.jpg",
+      src: getAssetUrl("/images/photos/photo-6.jpg"),
       alt: "Hardware and development tools",
     },
     {
-      src: "/images/photos/photo-7.jpg",
+      src: getAssetUrl("/images/photos/photo-7.jpg"),
       alt: "Tech conference & collaboration",
     },
-    { src: "/images/photos/photo-8.jpg", alt: "Software architecture session" },
+    { src: getAssetUrl("/images/photos/photo-8.jpg"), alt: "Software architecture session" },
     {
-      src: "/images/photos/photo-9.jpg",
+      src: getAssetUrl("/images/photos/photo-9.jpg"),
       alt: "Developer thinking & designing",
     },
   ],
